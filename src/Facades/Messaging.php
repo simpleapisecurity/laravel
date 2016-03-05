@@ -1,6 +1,6 @@
 <?php
 
-namespace scrothers\laravelsodium\Facades;
+namespace SimpleAPISecurity\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

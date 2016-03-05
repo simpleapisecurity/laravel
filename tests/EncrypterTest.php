@@ -1,7 +1,7 @@
 <?php
 
-use scrothers\laravelsodium\SodiumEncrypter;
-use scrothers\laravelsodium\SodiumLibrary;
+use SimpleAPISecurity\Laravel\SodiumEncrypter;
+use SimpleAPISecurity\Laravel\SodiumLibrary;
 
 class EncrypterTest extends PHPUnit_Framework_TestCase
 {
@@ -18,7 +18,7 @@ class EncrypterTest extends PHPUnit_Framework_TestCase
 
     /**
      * @requires                 extension libsodium
-     * @expectedException        scrothers\laravelsodium\Exceptions\DecryptionException
+     * @expectedException        SimpleAPISecurity\Laravel\Exceptions\DecryptionException
      * @expectedExceptionMessage The key provided cannot decrypt the message
      */
     public function testSodiumEncryptionFail()

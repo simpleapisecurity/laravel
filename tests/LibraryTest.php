@@ -1,12 +1,12 @@
 <?php
 
-use scrothers\laravelsodium\SodiumLibrary;
+use SimpleAPISecurity\Laravel\SodiumLibrary;
 
 class LibraryTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @requires                 extension libsodium
-     * @expectedException        scrothers\laravelsodium\Exceptions\KeyTypeException
+     * @expectedException        SimpleAPISecurity\Laravel\Exceptions\KeyTypeException
      * @expectedExceptionMessage keyedHash expects a string as the key
      */
     public function testSodiumKeyedHashBadKey()
@@ -16,7 +16,7 @@ class LibraryTest extends PHPUnit_Framework_TestCase
 
     /**
      * @requires                       extension libsodium
-     * @expectedException              scrothers\laravelsodium\Exceptions\HashLengthException
+     * @expectedException              SimpleAPISecurity\Laravel\Exceptions\HashLengthException
      * @expectedExceptionMessageRegExp #Hash length should be between \d+ and \d+#
      */
     public function testSodiumRawHashLengthBounds()

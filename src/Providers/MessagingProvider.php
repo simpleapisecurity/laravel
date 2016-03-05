@@ -1,9 +1,9 @@
 <?php
 
-namespace scrothers\laravelsodium\Providers;
+namespace SimpleAPISecurity\Laravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use scrothers\laravelsodium\SodiumMessaging;
+use SimpleAPISecurity\Laravel\SodiumMessaging;
 
 class MessagingProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace scrothers\laravelsodium\Exceptions;
+namespace SimpleAPISecurity\Laravel\Exceptions;
 
 use RuntimeException;
 

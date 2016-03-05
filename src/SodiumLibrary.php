@@ -1,11 +1,11 @@
 <?php
 
-namespace scrothers\laravelsodium;
+namespace SimpleAPISecurity\Laravel;
 
-use scrothers\laravelsodium\Exceptions\DecryptionException;
-use scrothers\laravelsodium\Exceptions\HashLengthException;
-use scrothers\laravelsodium\Exceptions\KeyTypeException;
-use scrothers\laravelsodium\Exceptions\SignatureException;
+use SimpleAPISecurity\Laravel\Exceptions\DecryptionException;
+use SimpleAPISecurity\Laravel\Exceptions\HashLengthException;
+use SimpleAPISecurity\Laravel\Exceptions\KeyTypeException;
+use SimpleAPISecurity\Laravel\Exceptions\SignatureException;
 use Sodium;
 
 class SodiumLibrary

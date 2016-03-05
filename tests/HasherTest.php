@@ -1,6 +1,6 @@
 <?php
 
-use scrothers\laravelsodium\SodiumHasher;
+use SimpleAPISecurity\Laravel\SodiumHasher;
 
 class HasherTest extends PHPUnit_Framework_TestCase
 {

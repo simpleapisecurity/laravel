@@ -1,6 +1,6 @@
 <?php
 
-namespace scrothers\laravelsodium;
+namespace SimpleAPISecurity\Laravel;
 
 use Illuminate\Contracts\Encryption\Encrypter as EncrypterContract;
 use Illuminate\Encryption\BaseEncrypter;

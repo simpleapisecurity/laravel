@@ -1,6 +1,6 @@
 <?php
 
-namespace scrothers\laravelsodium;
+namespace SimpleAPISecurity\Laravel;
 
 class SodiumMessaging
 {
