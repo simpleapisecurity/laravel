@@ -3,7 +3,7 @@
 namespace SimpleAPISecurity\Laravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use SimpleAPISecurity\Laravel\SodiumEncrypter;
+use SimpleAPISecurity\Laravel\APISecurityEncrypter;
 
 class EncryptionProvider extends ServiceProvider
 {
@@ -18,7 +18,7 @@ class EncryptionProvider extends ServiceProvider
             $config = $app->make('config')->get('app');
             $key = $config['key'];
 
-            return new SodiumEncrypter($key);
+            return new APISecurityEncrypter($key);
         });
     }
 

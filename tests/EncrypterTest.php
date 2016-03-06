@@ -1,6 +1,6 @@
 <?php
 
-use SimpleAPISecurity\Laravel\SodiumEncrypter;
+use SimpleAPISecurity\Laravel\APISecurityEncrypter;
 use SimpleAPISecurity\Laravel\SodiumLibrary;
 
 class EncrypterTest extends PHPUnit_Framework_TestCase
@@ -10,7 +10,7 @@ class EncrypterTest extends PHPUnit_Framework_TestCase
      */
     public function testSodiumEncryption()
     {
-        $e = new SodiumEncrypter(str_repeat('a', 16));
+        $e = new APISecurityEncrypter(str_repeat('a', 16));
         $encrypted = $e->encrypt('foo');
         $this->assertNotEquals('foo', $encrypted);
         $this->assertEquals('foo', $e->decrypt($encrypted));

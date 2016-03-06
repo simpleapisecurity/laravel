@@ -1,6 +1,6 @@
 <?php
 
-use SimpleAPISecurity\Laravel\SodiumHasher;
+use SimpleAPISecurity\Laravel\APISecurityHasher;
 
 class HasherTest extends PHPUnit_Framework_TestCase
 {
@@ -9,7 +9,7 @@ class HasherTest extends PHPUnit_Framework_TestCase
      */
     public function testBasicHashing()
     {
-        $hasher = new SodiumHasher();
+        $hasher = new APISecurityHasher();
         $value = $hasher->make('password');
         $this->assertNotSame('password', $value);
         $this->assertTrue($hasher->check('password', $value));
@@ -21,7 +21,7 @@ class HasherTest extends PHPUnit_Framework_TestCase
      */
     public function testSlowHashing()
     {
-        $hasher = new SodiumHasher();
+        $hasher = new APISecurityHasher();
         $value = $hasher->make('password', ['slow' => true]);
         $this->assertNotSame('password', $value);
         $this->assertTrue($hasher->check('password', $value));

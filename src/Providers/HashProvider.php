@@ -3,7 +3,7 @@
 namespace SimpleAPISecurity\Laravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use SimpleAPISecurity\Laravel\SodiumHasher;
+use SimpleAPISecurity\Laravel\APISecurityHasher;
 
 class HashProvider extends ServiceProvider
 {
@@ -21,7 +21,7 @@ class HashProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('hash', function () { return new SodiumHasher(); });
+        $this->app->singleton('hash', function () { return new APISecurityHasher(); });
     }
 
     /**
