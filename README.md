@@ -1,4 +1,6 @@
 # Libsodium for Laravel
+
+[![Join the chat at https://gitter.im/simpleapisecurity/laravel](https://badges.gitter.im/simpleapisecurity/laravel.svg)](https://gitter.im/simpleapisecurity/laravel?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 This library is meant to be a fairly expansive encryption replacement to Laravel's built in methods. The goals is that by default it will replace the encryption and the hashing mechanisms of Laravel with compatible methods powered by libsodium.
 
 ## How to Install
