@@ -1,14 +1,21 @@
 {
   "name": "simpleapisecurity/laravel",
-  "description": "Laravel bindings for libsodium in the encrypter and hasher",
+  "description": "Drop in replacement for the Laravel hash and encryption mechanisms.",
   "type": "library",
   "homepage": "https://github.com/simpleapisecurity/laravel",
+  "keywords": [
+    "laravel",
+    "security",
+    "encryption",
+    "sodium",
+    "libsodium"
+  ],
   "require": {
     "php": ">=5.5.9",
     "ext-libsodium": "*",
     "illuminate/contracts": "5.1.*|5.2.*",
     "illuminate/encryption": "5.1.*|5.2.*",
-    "simpleapisecurity/php": "dev-master"
+    "simpleapisecurity/php": "0.1.*"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.0",

@@ -1,0 +1,22 @@
+language: php
+
+sudo: true
+
+php:
+  - '5.5'
+  - '5.6'
+  - '7.0'
+
+before_install:
+  - wget http://ppa.launchpad.net/anton+/dnscrypt/ubuntu/pool/main/libs/libsodium/libsodium-dbg_1.0.3-1pmo1~precise_amd64.deb
+  - wget http://ppa.launchpad.net/anton+/dnscrypt/ubuntu/pool/main/libs/libsodium/libsodium-dev_1.0.3-1pmo1~precise_amd64.deb
+  - wget http://ppa.launchpad.net/anton+/dnscrypt/ubuntu/pool/main/libs/libsodium/libsodium13_1.0.3-1pmo1~precise_amd64.deb
+  - sudo dpkg -i libsodium13_1.0.3-1pmo1~precise_amd64.deb
+  - sudo dpkg -i libsodium-dev_1.0.3-1pmo1~precise_amd64.deb
+  - sudo dpkg -i libsodium-dbg_1.0.3-1pmo1~precise_amd64.deb
+  - pecl install libsodium
+
+install:
+  - travis_retry composer install --no-interaction --prefer-source
+
+script: vendor/bin/phpunit
