@@ -1,4 +1,5 @@
 # Simple API Security for Laravel
+[![Build Status](https://travis-ci.org/simpleapisecurity/laravel.svg)](https://travis-ci.org/simpleapisecurity/laravel)
 [![Total Downloads](https://poser.pugx.org/simpleapisecurity/laravel/d/total.svg)](https://packagist.org/packages/simpleapisecurity/laravel)
 [![Latest Stable Version](https://poser.pugx.org/simpleapisecurity/laravel/v/stable.svg)](https://packagist.org/packages/simpleapisecurity/laravel)
 [![Latest Unstable Version](https://poser.pugx.org/simpleapisecurity/laravel/v/unstable.svg)](https://packagist.org/packages/simpleapisecurity/laravel)
